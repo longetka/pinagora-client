@@ -1,0 +1,36 @@
+.input {
+	&__container {
+		background-color: #4b4052;
+		margin: 10px 0px;
+		width: 95%;
+		display: flex;
+		align-items: center;
+		border-left: 10px solid red;
+		border-radius: 0px 5px 5px 0px;
+	}
+	text-align: center;
+	border: none;
+	background-color: #4b4052;
+	outline: none;
+	width: 100%;
+	border-radius: 0px 5px 5px 0px;
+	padding: 15px 0px;
+	&__label {
+		padding-left: 15px;
+	}
+}
+
+input {
+	color: white;
+	font-weight: bold;
+	font-size: 1.2rem;
+	&:focus {
+		color: white;
+		font-weight: bold;
+		font-size: 1.2rem;
+	}
+	&::placeholder {
+		color: rgb(204, 204, 204);
+		font-size: 1.2rem;
+	}
+}

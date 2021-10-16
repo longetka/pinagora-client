@@ -1,0 +1,24 @@
+@import './reset.scss';
+@import './components/form/Login.scss';
+@import './components/form/components/Input.scss';
+@import './components/form/buttons/Button.scss';
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width: 320px) {
+	.form__container {
+		width: 90%;
+	}
+}
+@media screen and (min-width: 425px) {
+	.form__container {
+		width: 80%;
+	}
+}
+@media screen and (min-width: 768px) {
+	.form__container {
+		width: 50%;
+	}
+}
