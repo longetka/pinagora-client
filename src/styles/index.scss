@@ -1,0 +1,25 @@
+@import './variables.scss';
+@import './reset.scss';
+@import '../components/form/Auth.scss';
+@import '../components/form/components/Input.scss';
+@import '../components/form/buttons/Button.scss';
+
+body {
+	background-color: #F9F9F9;
+}
+
+// @media screen and (min-width: 320px) {
+// 	.form__wrapper {
+// 		width: 90%;
+// 	}
+// }
+// @media screen and (min-width: 425px) {
+// 	.form__wrapper {
+// 		width: 80%;
+// 	}
+// }
+// @media screen and (min-width: 768px) {
+// 	.form__wrapper {
+// 		width: 50%;
+// 	}
+// }

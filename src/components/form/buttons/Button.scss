@@ -2,14 +2,19 @@
 	&__container {
 		display: flex;
 		justify-content: center;
-		padding: 10px 0px;
+		margin-top: 1.25rem;
+		margin-bottom: 1.875rem;
+		width: 65.1%;
 	}
-	padding: 15px 45px;
+	width: 100%;
+	padding: .905rem 0px;
 	border: none;
 	border-radius: 5px;
 	outline: none;
-	background-color: #4a54e3;
-	font-weight: bold;
+	background-color: $bg-button;
+
+	font-family: $font-secondary;
+	font-weight: 400;
 	color: white;
 	transition: all .2s ease;
 	&:hover {
