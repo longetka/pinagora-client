@@ -1,7 +1,26 @@
 .loginButton {
+	display: flex;
+	align-items: center;
+	padding-right: 50px;
 	border: none;
 	background-color: transparent;
 	text-decoration: none;
 	color: white;
 	
+	&__avatar {
+		padding-right: 10px;
+	}
+	&__username {
+		padding-right: 10px;
+		position: relative;
+		&::after {
+			content: "\203A";
+			position: absolute;
+			top: 0%;
+			right: -20px;
+			bottom: 54%;
+			padding-left: 10px;
+			transform: rotate(90deg);
+		}
+	}
 }
