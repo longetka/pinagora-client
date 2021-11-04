@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Button = (props) => {
+const FormButton = (props) => {
 	return (
 		<div className="button__container">
 			<button className="button" type={props.btnType}>{props.btnName}</button>
@@ -8,4 +8,4 @@ const Button = (props) => {
 	)
 }
 
-export default Button;
+export default FormButton;

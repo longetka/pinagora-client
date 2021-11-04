@@ -2,10 +2,13 @@
 @import './reset.scss';
 @import '../components/form/Auth.scss';
 @import '../components/form/components/Input.scss';
-@import '../components/form/buttons/Button.scss';
+@import '../components/buttons/formButton/FormButton.scss';
+@import '../components/buttons/loginButton/LoginButton.scss';
+@import '../components/navbar/Navbar.scss';
 
 body {
-	background-color: #F9F9F9;
+	background-color: $bg-color;
+	background-image: url('../assets/images/pic/bg-image.png');
 }
 
 // @media screen and (min-width: 320px) {

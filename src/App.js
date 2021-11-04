@@ -1,10 +1,11 @@
 import React from 'react';
-import Auth from './components/form/Auth';
+import Navbar from './components/navbar/Navbar';
+
 
 function App() {
   return (
     <div>
-      <Auth />
+      <Navbar userName="user_1709"/>
     </div>
   );
 };

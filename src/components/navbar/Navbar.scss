@@ -1,0 +1,14 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $bg-navbar;
+	width: 100%;
+
+	font-family: $font-primary;
+	color: white;
+	
+	&__logotype {
+		padding: 40px 0px 33px 50px;
+	}
+}

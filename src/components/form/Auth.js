@@ -1,6 +1,6 @@
 import React from 'react';
 import Input from './components/Input';
-import Button from './buttons/Button';
+import FormButton from '../buttons/formButton/FormButton';
 
 const Auth = () => {
 	
@@ -31,7 +31,7 @@ const Auth = () => {
 						inputType="password"
 						placeholder="Повторите пароль"
 					/>
-					<Button 
+					<FormButton 
 						btnType="submit"
 						btnName="Регистрация"
 					/>
