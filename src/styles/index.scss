@@ -1,10 +1,19 @@
 @import './variables.scss';
 @import './reset.scss';
-@import '../components/form/Auth.scss';
-@import '../components/form/components/Input.scss';
+// Buttons
 @import '../components/buttons/formButton/FormButton.scss';
 @import '../components/buttons/loginButton/LoginButton.scss';
+@import '../components/buttons/appButton/AppButton.scss';
+@import '../components/buttons/folderButton/FolderButton.scss';
+// Components
+@import '../components/form/components/Input.scss';
+@import '../components/form/Auth.scss';
 @import '../components/navbar/Navbar.scss';
+@import '../components/appField/AppField.scss';
+@import '../components/user/User.scss';
+// Pages
+@import '../pages/main/Main.scss';
+@import '../pages/save/Save.scss';
 
 body {
 	background-color: $bg-color;
