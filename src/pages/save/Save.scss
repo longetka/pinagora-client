@@ -1,8 +1,28 @@
 .save {
-
-	&__container {
-		display: flex;
+	&__wrapper {
+		margin: 0 auto;
+		height: 100vh;
 		width: 70%;
-		flex-wrap: wrap;
+	}
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 119px);
+		grid-gap: 55px;
+		width: 100%;
+		height: 70%;
+		overflow-y: scroll;
+		margin: 0 auto;
+		&::-webkit-scrollbar {
+			width: 10px;
+		}
+		&::-webkit-scrollbar-track {
+			border-radius: 10px;
+			box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+		}
+		&::-webkit-scrollbar-thumb {
+			border-radius: 10px;
+			box-shadow: inset 0 0 6px rgba(0, 0, 0, .5);
+		}
+
 	}
 }

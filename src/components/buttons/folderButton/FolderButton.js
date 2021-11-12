@@ -6,7 +6,7 @@ const FolderButton = (props) => {
 	return (
 		<div className="folderButton">
 			<img className="folderButton__image" src={folderIcon} alt="folder"/>
-			<p className="foldderButton__description">{props.name}</p>
+			<p className="folderButton__description">{props.name}</p>
 		</div>
 	);
 };

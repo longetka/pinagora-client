@@ -1,5 +1,7 @@
 import React from 'react';
 import FolderButton from '../../components/buttons/folderButton/FolderButton';
+import FolderNavbar from '../../components/folderNavbar/FolderNavbar';
+import NavAppField from '../../components/navAppField/NavAppField';
 import saveDataTest from './saveDataTest';
 
 const Save = (props) => {
@@ -10,8 +12,12 @@ const Save = (props) => {
 	});
 
 	return (
-		<div className="save__container">
-			{foldersData}
+		<div className="save__wrapper">
+			<FolderNavbar />
+			<div className="save__container">
+				{foldersData}
+			</div>
+			<NavAppField />
 		</div>
 	);
 };

@@ -1,0 +1,42 @@
+@import './variables.scss';
+@import './reset.scss';
+// Buttons
+@import '../../components/buttons/formButton/FormButton.scss';
+@import '../../components/buttons/loginButton/LoginButton.scss';
+@import '../../components/buttons/appButton/AppButton.scss';
+@import '../../components/buttons/folderButton/FolderButton.scss';
+@import '../../components/buttons/settingsFolderButton/SettingsFolderButton.scss';
+@import '../../components/buttons/sortFolderButton/SortFolderButton.scss';
+// Components
+@import '../../components/form/components/Input.scss';
+@import '../../components/form/Auth.scss';
+@import '../../components/navbar/Navbar.scss';
+@import '../../components/appField/AppField.scss';
+@import '../../components/user/User.scss';
+@import '../../components/navAppField/NavAppField.scss';
+@import '../../components/folderNavbar/FolderNavbar.scss';
+@import '../../components/folderNavbar/FolderNavbar.scss';
+// Pages
+@import '../../pages/main/Main.scss';
+@import '../../pages/save/Save.scss';
+
+body {
+	background-color: $bg-color;
+	background-image: url('../images/pic/bg-image.png');
+}
+
+// @media screen and (min-width: 320px) {
+// 	.form__wrapper {
+// 		width: 90%;
+// 	}
+// }
+// @media screen and (min-width: 425px) {
+// 	.form__wrapper {
+// 		width: 80%;
+// 	}
+// }
+// @media screen and (min-width: 768px) {
+// 	.form__wrapper {
+// 		width: 50%;
+// 	}
+// }

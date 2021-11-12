@@ -1,5 +1,6 @@
 .appField {
-	display: flex;
-	flex-wrap: wrap;
-	width: 725px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 100.1px);
+	grid-gap: 22px 55px;
+	width: 53.45%;
 }
