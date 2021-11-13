@@ -1,5 +1,6 @@
 @import './variables.scss';
 @import './reset.scss';
+@import './globals.scss';
 // Buttons
 @import '../../components/buttons/formButton/FormButton.scss';
 @import '../../components/buttons/loginButton/LoginButton.scss';
@@ -7,6 +8,9 @@
 @import '../../components/buttons/folderButton/FolderButton.scss';
 @import '../../components/buttons/settingsFolderButton/SettingsFolderButton.scss';
 @import '../../components/buttons/sortFolderButton/SortFolderButton.scss';
+@import '../../components/buttons/createFolderButton/CreateFolderButton.scss';
+@import '../../components/buttons/optionButton/OptionButton.scss';
+@import '../../components/buttons/selectFolderButton/SelectFolderButton.scss';
 // Components
 @import '../../components/form/components/Input.scss';
 @import '../../components/form/Auth.scss';
@@ -16,9 +20,11 @@
 @import '../../components/navAppField/NavAppField.scss';
 @import '../../components/folderNavbar/FolderNavbar.scss';
 @import '../../components/folderNavbar/FolderNavbar.scss';
+@import '../../components/select/Select.scss';
 // Pages
 @import '../../pages/main/Main.scss';
 @import '../../pages/save/Save.scss';
+@import '../../pages/gallery/Gallery.scss';
 
 body {
 	background-color: $bg-color;

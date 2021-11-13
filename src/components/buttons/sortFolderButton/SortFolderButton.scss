@@ -1,0 +1,28 @@
+.sortFolderButton {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	&__container {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		padding-left: 20px;
+	}
+	&__image {
+		width: 20px;
+		height: 18px;
+	}
+	&__name {
+		position: relative;
+		padding-left: 20px;
+		&::after {
+			position: absolute;
+			top: -20px;
+			padding-left: 30px;
+			content: "\203A";
+			color: white;
+			font-size: 25px;
+			transform: rotate(90deg);
+		}
+	}
+}

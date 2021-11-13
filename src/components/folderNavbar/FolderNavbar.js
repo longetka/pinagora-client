@@ -1,13 +1,11 @@
 import React from 'react';
-import SettingsFolderButton from '../buttons/settingsFolderButton/SettingsFolderButton';
-import SortFolderButton from '../buttons/sortFolderButton/SortFolderButton';
 
-const FolderNavbar = () => {
+const FolderNavbar = (props) => {
 
 	return (
 		<div className="folderNavbar">
-			<SettingsFolderButton />
-			<SortFolderButton />
+			{props.children}
+			
 		</div>
 	);
 };
