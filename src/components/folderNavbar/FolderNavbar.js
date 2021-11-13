@@ -3,7 +3,7 @@ import React from 'react';
 const FolderNavbar = (props) => {
 
 	return (
-		<div className="folderNavbar">
+		<div className={props.variant}>
 			{props.children}
 			
 		</div>

@@ -1,0 +1,9 @@
+.photoFrame {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 168.8px);
+	grid-gap: 25px;
+	&__img {
+		width: 170px;
+		height: 170px;
+	}
+}

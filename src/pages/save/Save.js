@@ -16,7 +16,7 @@ const Save = (props) => {
 
 	return (
 		<div className="page-wrapper">
-			<FolderNavbar>
+			<FolderNavbar variant={"folderNavbar"}>
 				<SettingsFolderButton />
 				<SortFolderButton />
 				<CreateFolderButton />

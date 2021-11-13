@@ -1,0 +1,18 @@
+.selectFolderButton {
+	display: flex;
+	align-items: center;
+	position: relative;
+	&__image {
+		width: 22.4px;
+		height: 19.2px;
+		padding-right: 20px;
+	}
+	&::after {
+		content: "\203A";
+		position: absolute;
+		transform: rotate(90deg);
+		color: white;
+		font-size: 24px;
+		right: -20px;
+	}
+}

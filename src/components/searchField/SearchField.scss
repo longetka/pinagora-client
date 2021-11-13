@@ -1,0 +1,22 @@
+.searchField {
+	position: relative;
+	&__input {
+		border: none;
+		border-radius: 10px;
+		height: 35px;
+		width: 350px;
+		padding-left: 10px;
+		font-family: $font-secondary;
+		font-size: 16px;
+		&:focus {
+			outline-width: 1px;
+			outline-color: rgba(27, 62, 131, .44);
+		}
+	}
+	&::after {
+		content: url('../../assets/images/icons/search-icon.png');
+		position: absolute;
+		top: 7px;
+		right: 10px;
+	}
+}
