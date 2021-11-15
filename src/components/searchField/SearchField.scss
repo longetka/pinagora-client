@@ -12,6 +12,11 @@
 			outline-width: 1px;
 			outline-color: rgba(27, 62, 131, .44);
 		}
+		&::placeholder {
+			font-family: $font-secondary;
+			font-size: 16px;
+			font-weight: 400;
+		}
 	}
 	&::after {
 		content: url('../../assets/images/icons/search-icon.png');
