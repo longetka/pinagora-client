@@ -1,0 +1,79 @@
+.paper {
+	display: grid;
+	grid-template-columns: 30% 70%;
+	background-color: rgba(95, 138, 250, .3);
+	border: none;
+	border-radius: 22px;
+}
+.calendar {
+	padding: 40px 25px;
+	&__title {
+		font-size: 41px;
+		font-family: $font-secondary;
+		font-weight: 400;
+		color: white;
+	}
+}
+.react-calendar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&__month-view {
+		&__days {
+			&__day {
+				width: 60px;
+				height: 60px;
+				border: 1px solid black;
+				background-color: transparent;
+				border-radius: 50%;
+			}
+		}
+		&__weekdays {
+			
+			&__weekday {
+				text-align: center;
+				& abbr {
+					text-decoration: none;
+					text-transform: uppercase;
+					font-family: $font-secondary;
+					font-size: 23px;
+					font-weight: 400;
+					color: white;
+				}
+				
+			}
+			
+		}
+	}
+	&__navigation {
+		width: 80%;
+		margin: 30px 0px;
+		display: flex;
+		justify-content: space-around;
+		&__next2-button {
+			display: none;
+		}
+		&__prev2-button {
+			display: none;
+		}
+		&__label, &__prev-button, &__next-button {
+			border: none;
+			background-color: transparent;
+			font-family: $font-secondary;
+			text-align: center;
+			width: min-content;
+			cursor: pointer;
+		}
+		&__label {
+			font-size: 33px;
+			color: white;
+			flex-grow: 0!important;
+		}
+		&__prev-button, &__next-button {
+			font-size: 33px;
+			color: rgba(255, 255, 255, .7);
+		}
+	}
+	
+}

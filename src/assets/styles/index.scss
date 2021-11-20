@@ -23,10 +23,12 @@
 @import '../../components/select/Select.scss';
 @import '../../components/searchField/SearchField.scss';
 @import '../../components/photoFrame/PhotoFrame.scss';
+@import '../../components/paperInfoBar/PaperInfoBar.scss';
 // Pages
 @import '../../pages/main/Main.scss';
 @import '../../pages/save/Save.scss';
 @import '../../pages/gallery/Gallery.scss';
+@import '../../pages/paper/Paper.scss';
 
 body {
 	background-color: $bg-color;
