@@ -19,10 +19,15 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	&__viewContainer {
+		width: 80%;
+	}
 	&__month-view {
 		&__days {
+			column-gap: 48.75px;
+			row-gap: 20px;
 			&__day {
-				width: 60px;
+				max-width: 60px!important;
 				height: 60px;
 				border: 1px solid black;
 				background-color: transparent;
@@ -30,7 +35,8 @@
 			}
 		}
 		&__weekdays {
-			
+			column-gap: 48.75px;
+			margin-bottom: 40px;
 			&__weekday {
 				text-align: center;
 				& abbr {
