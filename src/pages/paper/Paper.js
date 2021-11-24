@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Calendar from 'react-calendar';
+import NavAppField from '../../components/navAppField/NavAppField';
 import PaperInfoBar from '../../components/paperInfoBar/PaperInfoBar';
 
 const Paper = () => {
@@ -35,7 +36,7 @@ const Paper = () => {
 					
 				/>
 			</div>
-			
+			<NavAppField />
 		</div>
 	);
 };

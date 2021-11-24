@@ -5,6 +5,7 @@ import Navbar from './components/navbar/Navbar';
 import Save from './pages/save/Save';
 import Gallery from './pages/gallery/Gallery';
 import Paper from './pages/paper/Paper';
+import Contacts from './pages/contacts/Contacts';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/save" element={<Save/>} />
           <Route path="/gallery" element={<Gallery/>} />
           <Route path="/paper" element={<Paper/>} />
+          <Route path="/contacts" element={<Contacts/>} />
         </Routes>
 
       </Router>

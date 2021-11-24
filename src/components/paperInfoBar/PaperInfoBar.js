@@ -8,7 +8,9 @@ const PaperInfoBar = (props) => {
 				<p className="paperInfoBar__month">{props.month}</p>
 				<p className="paperInfoBar__year">{props.year}</p>
 			</div>
-			<div className="paperInfoBar__todo"></div>
+			<div className="paperInfoBar__todo">
+				
+			</div>
 			<div className="paperInfoBar__schedule"></div>
 		</div>
 	);
