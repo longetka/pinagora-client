@@ -1,0 +1,16 @@
+.infoCardField {
+	border-bottom: 1.5px solid rgba(255, 255, 255, .8);
+	padding-top: 20px;
+	&__label, &__data {
+		font-family: $font-secondary;
+		color: white;
+		font-weight: 400;
+		padding-bottom: 10px;
+	}
+	&__label {
+		font-size: 12px;
+	}
+	&__data {
+		font-size: 16px;
+	}
+}

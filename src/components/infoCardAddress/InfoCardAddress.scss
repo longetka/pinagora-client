@@ -1,0 +1,15 @@
+.infoCardAddress {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	&__address {
+		flex-basis: 65%;	
+
+	}
+	&__map {
+		height: 91px;
+		width: 91px;
+		background-color: wheat;
+		border-radius: 5px;
+	}
+}

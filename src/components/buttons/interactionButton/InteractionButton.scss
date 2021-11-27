@@ -1,0 +1,11 @@
+.interactionButton {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	&__name {
+		font-family: $font-secondary;
+		font-size: 12px;
+		font-weight: 400;
+		color: white;
+	}
+}

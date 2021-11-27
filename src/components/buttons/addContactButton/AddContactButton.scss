@@ -1,0 +1,23 @@
+.addContactButton {
+	&__button {
+		width: 57px;
+		height: 57px;
+		border-radius: 50%;
+		border: none;
+		background-color: rgba(16, 44, 112, .8);
+		position: relative;
+		cursor: pointer;
+		&::before, &::after {
+			position: absolute;
+			top: 14px;
+			left: 28px;
+			content: "";
+			width: 3px;
+			height: 30px;
+			background-color: white;
+		}
+		&::before {
+			transform: rotate(90deg);
+		}
+	}
+}

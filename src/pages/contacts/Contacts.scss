@@ -1,3 +1,35 @@
 .contacts {
 	margin-top: 60px;
+	&__container {
+		display: grid;
+		grid-template-columns: 14fr 1fr 1fr;
+	}
+	&__button {
+		grid-column: 2;
+		grid-row: 1;
+		justify-self: end;
+	}
+	&__search {
+		grid-column: 3 / 4;
+		grid-row: 1;
+		justify-self: end;
+		align-self: center;
+	}
+	&__navigate {
+		grid-column: 2 / 3;
+		grid-row: 2 / 3;
+	}
+	&__search, &__info {
+		grid-column: 3 / 4;
+	}
+	&__list, &__info {
+		grid-row: 2 / 3;
+	}
+	
+	&__list {
+		grid-column: 1 / 2;
+		overflow-y: scroll;
+	}
+	&__info {
+	}
 }
