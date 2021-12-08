@@ -1,0 +1,9 @@
+.project {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	&__main {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
