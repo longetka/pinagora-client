@@ -4,30 +4,23 @@ import taskIcon from '../../assets/images/icons/my-task.png';
 import importantIcon from '../../assets/images/icons/important.png';
 import ideaIcon from '../../assets/images/icons/idea.png';
 import addIcon from '../../assets/images/icons/add-list.png';
+import ProjectNavLink from '../projectNavLink/ProjectNavLink';
 
 const ProjectNav = () => {
 	return (
 		<nav className="projectNav">
 			<ul className="projectNav__list">
 				<li className="projectNav__item">
-					<Link exact className="projectNav__link" to="/mytasks">
-						<img className="projectNav__icon" src={taskIcon} alt="My tasks"/>Мои задачи
-					</Link>
+					<ProjectNavLink to="mytasks" name="Мои задачи" icon={taskIcon} />
 				</li>
 				<li className="projectNav__item">
-					<Link className="projectNav__link" to="/important">
-						<img className="projectNav__icon" src={importantIcon} alt="Importants"/>Важно
-					</Link>
+					<ProjectNavLink to="important" name="Важно" icon={importantIcon} />
 				</li>
 				<li className="projectNav__item">
-					<Link className="projectNav__link" to="/ideas">
-						<img className="projectNav__icon" src={ideaIcon} alt="Ideas"/>Идеи
-					</Link>
+					<ProjectNavLink to="ideas" name="Идеи" icon={ideaIcon} />
 				</li>
 				<li className="projectNav__item">
-					<Link className="projectNav__link" to="/createList">
-						<img className="projectNav__icon" src={addIcon} alt="My tasks"/>Создать список
-					</Link>
+					
 				</li>
 			</ul>
 		</nav>

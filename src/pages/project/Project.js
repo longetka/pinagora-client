@@ -7,7 +7,9 @@ const Project = () => {
 		<div className="project">
 			<div className="project__main">
 				<ProjectNav />
-				<Outlet />
+				<div className="project__outlet">
+					<Outlet />
+				</div>
 			</div>
 			<aside className="project__aside">
 				aside options

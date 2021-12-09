@@ -1,0 +1,31 @@
+.projectTasks {
+	&__title {
+		font-family: $font-secondary;
+		font-size: 36px;
+		font-weight: 400;
+		color: white;
+		padding-bottom: 45px;
+	}
+	&__tasks {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 45px;
+	}
+	&__button {
+		display: flex;
+		align-items: flex-end;
+	}
+	&__addTask {
+		border: none;
+		border-radius: 10px;
+		justify-items: flex-end;
+		width: 220px;
+		height: 220px;
+		background-color: $quarter-trans-white;
+		cursor: pointer;
+		transition: 0.3s;
+		&:hover {
+			background-color: $half-trans-white;
+		}
+	}
+}

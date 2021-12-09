@@ -1,0 +1,28 @@
+.taskCard {
+	
+	&__listTask {
+		width: 220px;
+		height: 220px;
+		background-color: $half-trans-white;
+		border-radius: 10px;
+	}
+	&__title {
+		font-family: $font-secondary;
+		font-size: 24px;
+		font-weight: 400;
+		color: white;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+	&__list {
+		padding: 10px;
+	}
+	&__item {
+		list-style-type: decimal;
+		font-family: $font-secondary;
+		font-weight: 400;
+		font-size: 18px;
+		color: white;
+		list-style-position: inside;
+	}
+}

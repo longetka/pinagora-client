@@ -7,8 +7,8 @@ import Gallery from './pages/gallery/Gallery';
 import Paper from './pages/paper/Paper';
 import Contacts from './pages/contacts/Contacts';
 import Project from './pages/project/Project';
-// import ProjectTodo from './components/projectTodo/ProjectTodo';
-
+import ProjectTasks from './components/projectTasks/ProjectTasks';
+import ProjectImportant from './components/projectImportant/ProjectImportant';
 
 function App() {
   return (
@@ -22,10 +22,9 @@ function App() {
           <Route path="/paper" element={<Paper/>} />
           <Route path="/contacts" element={<Contacts/>} />
           <Route path="project" element={<Project />}>
-            <Route path="mytasks" element={<p>MyTasks</p>}/>
-            <Route path="important" element={<p>Important</p>}/>
+            <Route index path="mytasks" element={<ProjectTasks />}/>
+            <Route path="important" element={<ProjectImportant />}/>
             <Route path="ideas" element={<p>Ideas</p>}/>
-			      {/* <Route path="/project/mytasks" element={}/> */}
 		      </Route>
           
           

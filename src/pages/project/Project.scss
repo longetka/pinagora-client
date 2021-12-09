@@ -1,7 +1,12 @@
 .project {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-
+	grid-template-columns: 2fr 1fr;
+	&__outlet {
+		background-color: $transparent-white;
+		border-radius: 8px;
+		margin-top: 75px;
+		padding: 15px;
+	}
 	&__main {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
