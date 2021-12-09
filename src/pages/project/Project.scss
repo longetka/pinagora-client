@@ -1,6 +1,6 @@
 .project {
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 1fr 380px;
 	&__outlet {
 		background-color: $transparent-white;
 		border-radius: 8px;
@@ -9,6 +9,6 @@
 	}
 	&__main {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 445px 1fr;
 	}
 }

@@ -1,9 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import taskIcon from '../../assets/images/icons/my-task.png';
 import importantIcon from '../../assets/images/icons/important.png';
 import ideaIcon from '../../assets/images/icons/idea.png';
-import addIcon from '../../assets/images/icons/add-list.png';
+// import addIcon from '../../assets/images/icons/add-list.png';
 import ProjectNavLink from '../projectNavLink/ProjectNavLink';
 
 const ProjectNav = () => {
