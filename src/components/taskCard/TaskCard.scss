@@ -7,7 +7,7 @@
 		border-radius: 10px;
 	}
 	&__title {
-		font-family: $font-secondary;
+		font-family: $font-main;
 		font-size: 24px;
 		font-weight: 400;
 		color: white;
@@ -19,7 +19,7 @@
 	}
 	&__item {
 		list-style-type: decimal;
-		font-family: $font-secondary;
+		font-family: $font-main;
 		font-weight: 400;
 		font-size: 18px;
 		color: white;

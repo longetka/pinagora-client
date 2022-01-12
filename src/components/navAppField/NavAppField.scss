@@ -1,9 +1,9 @@
 .navAppField {
 	display: grid;
-	grid-template-columns: repeat( auto-fit, 133.1px );
-	justify-items: center;
-	width: 100%;
-	margin-bottom: 25px;
+	grid-template-columns: repeat( 10, 100px );
 	position: fixed;
-	bottom: 0;
+	bottom: 25px;
+	background-color: rgba(255, 255, 255, .15);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 8px rgba(255, 255, 255, .15);
 }

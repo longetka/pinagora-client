@@ -8,22 +8,24 @@ import SearchField from '../../components/searchField/SearchField';
 
 const Contacts = () => {
 	return (
-		<div className="contacts page-wrapper">
-			<div className="contacts__container">
-				<div className="contacts__button">
-					<AddContactButton />
-				</div>
-				<div className="contacts__search">
-					<SearchField />
-				</div>
-				<div className="contacts__list">
-					<ContactLink avatar="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cG9ydHJhaXR8ZW58MHx8MHx8&w=1000&q=80" name="Mary"/>
-				</div>
-				<div className="contacts__navigate">
-					<ContactsNavigate />
-				</div>
-				<div className="contacts__info">
-					<ContactInfoCard contactName="Mary"/>
+		<div className="contacts">
+			<div className="contacts__wrapper page-wrapper">
+				<div className="contacts__container">
+					<div className="contacts__button">
+						<AddContactButton />
+					</div>
+					<div className="contacts__search">
+						<SearchField />
+					</div>
+					<div className="contacts__list">
+						<ContactLink avatar="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cG9ydHJhaXR8ZW58MHx8MHx8&w=1000&q=80" name="Mary"/>
+					</div>
+					<div className="contacts__navigate">
+						<ContactsNavigate />
+					</div>
+					<div className="contacts__info">
+						<ContactInfoCard contactName="Mary"/>
+					</div>
 				</div>
 			</div>
 			<NavAppField />

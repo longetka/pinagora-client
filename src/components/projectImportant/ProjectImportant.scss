@@ -4,19 +4,17 @@
 		justify-content: space-between;
 	}
 	&__title {
-		font-family: $font-secondary;
+		font-family: $font-main;
 		font-size: 36px;
 		font-weight: 400;
 		color: white;
 		padding-bottom: 45px;
 	}
-	&__tasks {
-
-	}
+	
 	&__item {
 		list-style-type: decimal;
 		list-style-position: inside;
-		font-family: $font-secondary;
+		font-family: $font-main;
 		font-size: 24px;
 		color: white;
 		font-weight: 400;

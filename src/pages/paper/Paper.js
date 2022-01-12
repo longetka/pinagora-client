@@ -17,25 +17,30 @@ const Paper = () => {
 	}
 
 	return (
-		<div className="page-wrapper paper">
-			<PaperInfoBar 
-				day={date.toLocaleString("en-US", {day: "2-digit"})}
-				month={date.toLocaleString("en-US", {month: "long"})}
-				year={date.toLocaleString("en-US", {year: "numeric"})}
-			/>
-			<div className="calendar">
-				<h1 className="calendar__title">CALENDAR</h1>
-				<Calendar 
-					onChange={setDate}
-					locale="en-US"
-					value={date}
-					showNeighboringMonth={true}
-					navigationLabel={({date, label, locale, view}) => handleLabelButtons(date)}
-					nextLabel={`${nextDate}`}
-					prevLabel={`${prevDate}`}
-					
-				/>
+		<div className="page-wrapper paper__container">
+			<div className="paper__wrapper">
+				<div className="paper">
+					<PaperInfoBar 
+						day={date.toLocaleString("en-US", {day: "2-digit"})}
+						month={date.toLocaleString("en-US", {month: "long"})}
+						year={date.toLocaleString("en-US", {year: "numeric"})}
+					/>
+					<div className="calendar">
+						<h1 className="calendar__title">CALENDAR</h1>
+						<Calendar 
+							onChange={setDate}
+							locale="en-US"
+							value={date}
+							showNeighboringMonth={true}
+							navigationLabel={({date, label, locale, view}) => handleLabelButtons(date)}
+							nextLabel={`${nextDate}`}
+							prevLabel={`${prevDate}`}
+							
+						/>
+					</div>
+				</div>
 			</div>
+			
 			<NavAppField />
 		</div>
 	);

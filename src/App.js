@@ -9,12 +9,14 @@ import Contacts from './pages/contacts/Contacts';
 import Project from './pages/project/Project';
 import ProjectTasks from './components/projectTasks/ProjectTasks';
 import ProjectImportant from './components/projectImportant/ProjectImportant';
+import ProjectIdeas from './components/projectIdeas/ProjectIdeas';
 
 function App() {
   return (
     <div>
-      <Navbar userName="user_1709"/>
+      
       <Router>
+        <Navbar userName="user_1709"/>
         <Routes>
           <Route path="/" element={<Main/>} />
           <Route path="/save" element={<Save/>} />
@@ -24,7 +26,7 @@ function App() {
           <Route path="project" element={<Project />}>
             <Route index path="mytasks" element={<ProjectTasks />}/>
             <Route path="important" element={<ProjectImportant />}/>
-            <Route path="ideas" element={<p>Ideas</p>}/>
+            <Route path="ideas" element={<ProjectIdeas />}/>
 		      </Route>
           
           

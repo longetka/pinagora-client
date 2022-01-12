@@ -1,0 +1,13 @@
+.projectIdeas {
+	&__head {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__title {
+		font-family: $font-main;
+		font-size: 36px;
+		font-weight: 400;
+		color: white;
+		padding-bottom: 45px;
+	}
+}

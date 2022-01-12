@@ -16,10 +16,10 @@
 }
 
 input {
-	font-family: $font-primary;
+	font-family: $font-secondary;
 	font-weight: 400;
 	&::placeholder {
-		font-family: $font-primary;		
+		font-family: $font-secondary;		
 		font-weight: 400;
 		color: $text-gray;
 		font-size: .875rem;

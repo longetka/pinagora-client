@@ -1,5 +1,7 @@
 .contacts {
 	margin-top: 60px;
+	display: flex;
+	justify-content: center;
 	&__container {
 		display: grid;
 		grid-template-columns: 14fr 1fr 1fr;
@@ -38,7 +40,5 @@
 		&::-webkit-scrollbar-thumb {
 			display: none;
 		}
-	}
-	&__info {
 	}
 }

@@ -6,8 +6,10 @@ const Main = () => {
 
 	return (
 		<div className="main__container">
-			<User firstName="Alena" lastName="Cherepanova"/>
-			<AppField />
+			<div className="main__wrapper">
+				<User firstName="Alena" lastName="Cherepanova"/>
+				<AppField />
+			</div>
 		</div>
 	)
 };
