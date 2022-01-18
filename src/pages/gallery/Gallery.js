@@ -7,12 +7,14 @@ import SearchField from '../../components/searchField/SearchField';
 
 const Gallery = () => {
 	return (
-		<div className="page-wrapper">
-			<FolderNavbar variant="galleryNavbar">
-				<SelectFolderButton folderName="Folder name"/>
-				<SearchField />
-			</FolderNavbar>
-			<PhotoFrame />
+		<div className="gallery__wrapper">
+			<div className="gallery">
+				<FolderNavbar variant="galleryNavbar">
+					<SelectFolderButton folderName="Folder name"/>
+					<SearchField />
+				</FolderNavbar>
+				<PhotoFrame />	
+			</div>
 			<NavAppField />
 		</div>
 	);

@@ -15,14 +15,16 @@ const Save = (props) => {
 	});
 
 	return (
-		<div className="page-wrapper">
-			<FolderNavbar variant={"folderNavbar"}>
-				<SettingsFolderButton />
-				<SortFolderButton />
-				<CreateFolderButton />
-			</FolderNavbar>
-			<div className="save__container">
-				{foldersData}
+		<div className="save__wrapper">
+			<div className="save">
+				<FolderNavbar variant={"folderNavbar"}>
+					<SettingsFolderButton />
+					<SortFolderButton />
+					<CreateFolderButton />
+				</FolderNavbar>
+				<div className="save__container">
+					{foldersData}
+				</div>
 			</div>
 			<NavAppField />
 		</div>

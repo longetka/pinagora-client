@@ -26,7 +26,7 @@ function App() {
           <Route path="project" element={<Project />}>
             <Route index path="mytasks" element={<ProjectTasks />}/>
             <Route path="important" element={<ProjectImportant />}/>
-            <Route path="ideas" element={<ProjectIdeas />}/>
+            <Route path=":id" element={<ProjectIdeas />}/>
 		      </Route>
           
           

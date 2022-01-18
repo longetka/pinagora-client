@@ -1,8 +1,11 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useParams } from 'react-router-dom';
+import ProjectAside from '../../components/projectAside/ProjectAside';
 import ProjectNav from '../../components/projectNav/ProjectNav';
 
 const Project = () => {
+	let {id} = useParams();
+
 	return (
 		<div className="project">
 			<div className="project__main">
@@ -11,9 +14,11 @@ const Project = () => {
 					<Outlet />
 				</div>
 			</div>
-			<aside className="project__aside">
-				aside options
-			</aside>
+			{ id === "ideas" ? (
+				<ProjectAside />
+				) : null				
+			}
+			
 		</div>
 	);
 };
