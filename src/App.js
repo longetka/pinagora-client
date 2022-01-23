@@ -10,6 +10,7 @@ import Project from './pages/project/Project';
 import ProjectTasks from './components/projectTasks/ProjectTasks';
 import ProjectImportant from './components/projectImportant/ProjectImportant';
 import ProjectIdeas from './components/projectIdeas/ProjectIdeas';
+import MapPage from './pages/map/MapPage';
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
             <Route path="important" element={<ProjectImportant />}/>
             <Route path=":id" element={<ProjectIdeas />}/>
 		      </Route>
-          
+          <Route path="/map" element={<MapPage />}/>
           
         </Routes>
 

@@ -4,9 +4,9 @@ import addIcon from '../../assets/images/icons/add-task.png';
 import tasks from '../../taskTest.js';
 
 const ProjectTasks = (props) => {
-	const tasksCardRender = tasks.map((value) => {
+	const tasksCardRender = tasks.map((value, index) => {
 		return (
-			<TaskCard title={value.title} tasks={value.tasksList} />
+			<TaskCard key={index} title={value.title} tasks={value.tasksList} />
 		)
 	})
 

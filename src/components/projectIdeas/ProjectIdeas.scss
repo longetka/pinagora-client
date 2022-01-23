@@ -10,4 +10,14 @@
 		color: white;
 		padding-bottom: 45px;
 	}
+	&__item {
+		font-family: $font-main;
+		font-size: 24px;
+		color: white;
+		font-weight: 400;
+		border-bottom: 1px solid $half-trans-white;
+		padding-bottom: 15px;
+		margin-bottom: 20px;
+		cursor: pointer;
+	}
 }

@@ -6,7 +6,7 @@ import items from './testItems';
 const ProjectImportant = () => {
 	const itemsRender = items.map((value, index) => {
 		return (
-			<Item index={index} name={value} />
+			<Item key={index} name={value} />
 		)
 	})
 
