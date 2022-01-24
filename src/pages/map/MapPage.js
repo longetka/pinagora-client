@@ -9,7 +9,12 @@ const MapPage = () => {
 		<div className="map">
 			<YMaps>
 				<div>
-					<Map defaultState={{ center: [55.75, 37.57], zoom: 10 }} width="100%" height="70vh"/>
+					<Map 
+						defaultState={{ center: [55.75, 37.57], zoom: 10 }} 
+						width="99vw" 
+						height="89vh"
+						modules={["package.full"]}
+					/>
 				</div>
 			</YMaps>
 			<NavAppField />
