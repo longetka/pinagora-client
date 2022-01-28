@@ -11,6 +11,8 @@ import ProjectTasks from './components/projectTasks/ProjectTasks';
 import ProjectImportant from './components/projectImportant/ProjectImportant';
 import ProjectIdeas from './components/projectIdeas/ProjectIdeas';
 import MapPage from './pages/map/MapPage';
+import Browser from './pages/browser/Browser';
+import Job from './pages/job/Job';
 
 function App() {
   return (
@@ -30,7 +32,8 @@ function App() {
             <Route path=":id" element={<ProjectIdeas />}/>
 		      </Route>
           <Route path="/map" element={<MapPage />}/>
-          
+          <Route path="/web" element={<Browser />} />
+          <Route path="/job" element={<Job />} />
         </Routes>
 
       </Router>
