@@ -13,11 +13,11 @@ import ProjectIdeas from './components/projectIdeas/ProjectIdeas';
 import MapPage from './pages/map/MapPage';
 import Browser from './pages/browser/Browser';
 import Job from './pages/job/Job';
+import Games from './pages/games/Games';
 
 function App() {
   return (
     <div>
-      
       <Router>
         <Navbar userName="user_1709"/>
         <Routes>
@@ -30,10 +30,11 @@ function App() {
             <Route index path="mytasks" element={<ProjectTasks />}/>
             <Route path="important" element={<ProjectImportant />}/>
             <Route path=":id" element={<ProjectIdeas />}/>
-		      </Route>
+		  </Route>
           <Route path="/map" element={<MapPage />}/>
           <Route path="/web" element={<Browser />} />
           <Route path="/job" element={<Job />} />
+          <Route path="/games" element={<Games />} />
         </Routes>
 
       </Router>
