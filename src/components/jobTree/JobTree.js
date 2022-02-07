@@ -1,5 +1,4 @@
 import React from 'react';
-import JobTodo from '../jobTodo/JobTodo';
 
 const JobTree = ({data, onChange}) => {
     const jobTodoHandler = (event) => {
@@ -19,6 +18,7 @@ const JobTree = ({data, onChange}) => {
                 key={index}
                 onClick={event => jobTodoHandler(event)}
                 id={item.id}
+                className="jobTree__link"
             >
                 {changedTitle}
             </p>
@@ -27,7 +27,9 @@ const JobTree = ({data, onChange}) => {
 
     return (
         <div className="jobTree">
-            {renderItems}
+            <div className="jobTree__items">
+                {renderItems}
+            </div>
         </div>
     );
 };
