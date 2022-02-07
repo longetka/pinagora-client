@@ -1,0 +1,16 @@
+.games {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 69vh;
+    flex-direction: column;
+    &__title {
+        width: 70%;
+        color: white;
+        font-family: $font-main;
+        font-size: 42px;
+        font-weight: 400;
+
+        margin-bottom: 40px;
+    }
+}

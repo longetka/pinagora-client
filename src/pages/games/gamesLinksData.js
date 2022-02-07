@@ -7,27 +7,27 @@ import uniswapIcon from '../../assets/images/icons/gamesIcons/uniswap.png';
 const gamesLinksData = [
     {
         name: "1inch",
-        img: {oneInchIcon},
+        img: oneInchIcon,
         link: "https://app.1inch.io/"
     },
     {
         name: "PancakeSwap",
-        img: {pancakeIcon},
+        img: pancakeIcon,
         link: "https://pancakeswap.finance/"
     },
     {
         name: "QUICKSWAP",
-        img: {quickswapIcon},
+        img: quickswapIcon,
         link: "https://quickswap.exchange/"
     },
     {
         name: "Sushiswap",
-        img: {sushiswapIcon},
+        img: sushiswapIcon,
         link: "https://sushi.com/"
     },
     {
         name: "UNISWAP",
-        img: {uniswapIcon},
+        img: uniswapIcon,
         link: "https://app.1inch.io/"
     },
 ];

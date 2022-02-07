@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GamesLink = ({ link, img, name, key }) => {
+const GamesLink = ({ link, img, name }) => {
     
     return (
         <a 

@@ -1,0 +1,22 @@
+.gamesLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    gap: 20px;
+    &__link {
+        text-decoration: none;
+        color: white;
+        font-family: $font-main;
+        font-size: 24px;
+        font-weight: 400;
+        background-color: rgb(72, 128, 161);
+        padding: 28.5px 43px;
+        border-radius: 22px;
+        
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
