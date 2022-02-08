@@ -1,0 +1,39 @@
+.jobTodo {
+    font-family: $font-main;
+    color: white;
+    background-color: rgba(96, 169, 179, .5);
+    border-radius: 22px;
+    padding: 60px 40px;
+    &__title {
+       font-size: 36px;
+       font-weight: 400px;
+       &--isComplete {
+           &::after {
+               content: "\2713";
+               font-size: 30px;
+               padding: 0px 6px;
+               margin-left: 1em;
+               color: white;
+               background-color: #2D1CE8;
+               border-radius: 50%;
+           }
+       }
+    }
+    &__list {
+        list-style-type: none;
+        padding-left: 20px;
+    }
+    &__item {
+        font-size: 24px;
+        margin: 25px 0px 25px 25px;
+
+        &::before {
+            content: "\2022";
+            color: #2D1CE8;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    }
+}

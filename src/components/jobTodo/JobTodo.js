@@ -5,14 +5,14 @@ const JobTodo = ({idRef, data}) => {
    const renderTodo = data.map((todo) => {
        if (+idRef === +todo.id) {
            let todos = todo.todoList.map((value, index) => {
-               return <li key={index}>{value}</li>
+               return <li className="jobTodo__item" key={index}>{value}</li>
            })
            return (
                 <div id={todo.id}>
-                    <h3>
+                    <h3 className="jobTodo__title jobTodo__title--isComplete">
                         {todo.name}
                     </h3>
-                    <ul>
+                    <ul className="jobTodo__list">
                         {todos}
                     </ul>
                 </div>

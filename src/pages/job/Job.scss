@@ -3,8 +3,9 @@
     justify-content: center;
     &__container {
         width: 70%;
+        margin-top: 45px;
 
         display: grid;
-        grid-template-columns: .5fr 1fr 1fr;
+        grid-template-columns: .2fr .45fr 1fr;
     }
 }

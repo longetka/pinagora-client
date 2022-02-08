@@ -18,7 +18,7 @@ const JobTree = ({data, onChange}) => {
                 key={index}
                 onClick={event => jobTodoHandler(event)}
                 id={item.id}
-                className="jobTree__link"
+                className="jobTree__link jobTree__link--active"
             >
                 {changedTitle}
             </p>
