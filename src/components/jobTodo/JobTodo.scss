@@ -3,14 +3,14 @@
     color: white;
     background-color: rgba(96, 169, 179, .5);
     border-radius: 22px;
-    padding: 60px 40px;
+    padding: 40px 40px;
     &__title {
-       font-size: 36px;
+       font-size: 2.25rem;
        font-weight: 400px;
        &--isComplete {
            &::after {
                content: "\2713";
-               font-size: 30px;
+               font-size: 1.875rem;
                padding: 0px 6px;
                margin-left: 1em;
                color: white;
@@ -24,7 +24,7 @@
         padding-left: 20px;
     }
     &__item {
-        font-size: 24px;
+        font-size: 1.5rem;
         margin: 25px 0px 25px 25px;
 
         &::before {
@@ -34,6 +34,16 @@
             display: inline-block;
             width: 1em;
             margin-left: -1em;
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .jobTodo {
+        height: 50vh;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none;
         }
     }
 }

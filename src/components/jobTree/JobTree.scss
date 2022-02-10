@@ -1,13 +1,15 @@
 .jobTree {
     margin-top: 40px;
-
+    &__items {
+        margin: 10px;
+    }
     &__link {
         cursor: pointer;
         font-family: $font-main; 
         color: white;
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 400;
-        margin: 20px 0px;
+        padding: 12px 26px;
         width: fit-content;
         &--active {
             padding: 12px 26px;
@@ -17,4 +19,14 @@
         }
     }
 
+}
+
+@media screen and (max-width: 1366px) {
+    .jobTree {
+        height: 50vh;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
 }
