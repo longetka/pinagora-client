@@ -1,16 +1,13 @@
 import React, {useState} from 'react';
 
 const JobTree = ({data, onChange}) => {
-    const [id, setId] = useState();
-    const [selected, setSelected] = useState(id);
+    let [selected, setSelected] = useState('');
+
     const jobTodoClickHandler = (event) => {
         let eventId = event.target.id;
-        setId(eventId);
+        let targetClassList = event.target.classList;
         onChange(eventId);
         setSelected(eventId);
-        console.log(selected)
-        let eventClassList = event.target.classList;
-        eventClassList.add("jobTree__link--active")
     };
     const renderItems = data.map((item, index) => {
         let splitWords = item.name.split(' ');
@@ -20,14 +17,16 @@ const JobTree = ({data, onChange}) => {
         ${splitWords[3] ? splitWords[3] : ''}`;
 
         return (
-            <p 
-                key={index}
-                onClick={event => jobTodoClickHandler(event)}
-                id={item.id}
-                className="jobTree__link"
-            >
-                {changedTitle}
-            </p>
+                <button 
+                    type="button"
+                    key={index}
+                    onClick={event => jobTodoClickHandler(event)}
+                    id={item.id}
+                    className={`jobTree__link ${selected == item.id 
+                            ? "jobTree__link--active" : ""}`}
+                >
+                    {changedTitle}
+                </button>
         ) 
     });
 

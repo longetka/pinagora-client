@@ -3,8 +3,8 @@ import roadMap from '../../assets/images/icons/roadmap-line.png';
 
 const JobRoadMap = () => {
     return (
-        <div>
-            <img src={roadMap} alt="Roadmap" />
+        <div className="jobRoadMap">
+            <img className="jobRoadMap__img" src={roadMap} alt="Roadmap" />
         </div>
     );
 };

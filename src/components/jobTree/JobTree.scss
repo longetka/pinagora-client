@@ -1,9 +1,12 @@
 .jobTree {
     margin-top: 40px;
-    &__items {
-        margin: 10px;
+    height: 50vh;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        display: none;
     }
     &__link {
+        margin: 10px;
         cursor: pointer;
         font-family: $font-main; 
         color: white;
@@ -11,22 +14,13 @@
         font-weight: 400;
         padding: 12px 26px;
         width: fit-content;
+        border: none;
+        background: none;
         &--active {
             padding: 12px 26px;
             background: linear-gradient(100.65deg, #3037DA, #3E9DF8);
             border-radius: 16px;
             box-shadow: 0px 0px 14px 0px rgba(17, 14, 154, .82);
-        }
-    }
-
-}
-
-@media screen and (max-width: 1366px) {
-    .jobTree {
-        height: 50vh;
-        overflow-y: scroll;
-        &::-webkit-scrollbar {
-            display: none;
         }
     }
 }

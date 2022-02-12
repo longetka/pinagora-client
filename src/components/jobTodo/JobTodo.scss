@@ -3,7 +3,12 @@
     color: white;
     background-color: rgba(96, 169, 179, .5);
     border-radius: 22px;
-    padding: 40px 40px;
+    height: 50vh;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+   padding: 40px 40px;
     &__title {
        font-size: 2.25rem;
        font-weight: 400px;
@@ -34,16 +39,6 @@
             display: inline-block;
             width: 1em;
             margin-left: -1em;
-        }
-    }
-}
-
-@media screen and (max-width: 1366px) {
-    .jobTodo {
-        height: 50vh;
-        overflow-y: scroll;
-        &::-webkit-scrollbar {
-            display: none;
         }
     }
 }
