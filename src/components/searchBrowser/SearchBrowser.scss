@@ -7,10 +7,15 @@
         background-color: $quarter-trans-black;
         border: none;
         color: white;
+        padding: 22px 20px 22px 60px;
+        &::placeholder {
+            color: rgba(255, 255, 255, .6);
+        }
+     }
+     &__input, &__input::placeholder {
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         font-size: 24px;
-        padding: 22px 20px 22px 60px;
      }
      &__image {
         position: absolute;
@@ -18,5 +23,6 @@
         width: 32px;
         height: 32px;
         left: 18px;
+        color: rgba(255, 255, 255, .6);
      }
 }

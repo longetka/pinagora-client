@@ -5,7 +5,6 @@ const JobTree = ({data, onChange}) => {
 
     const jobTodoClickHandler = (event) => {
         let eventId = event.target.id;
-        let targetClassList = event.target.classList;
         onChange(eventId);
         setSelected(eventId);
     };

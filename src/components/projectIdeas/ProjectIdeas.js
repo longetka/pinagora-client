@@ -4,11 +4,12 @@ import IdeaItem from './components/IdeaItem';
 import idea from './ideasTest';
 
 const ProjectIdeas = () => {
-	const ideasRender = idea.map((value) => {
+	const ideasRender = idea.map((value, index) => {
 		return (
 			<IdeaItem 
 				name={value.title} 
 				id={value.id}
+                key={index}
 			/>
 		);
 	});

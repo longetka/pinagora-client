@@ -1,11 +1,12 @@
 import React from 'react';
+import JobTodoItem from './JobTodoItem';
 
 const JobTodo = ({idRef, data}) => {
 
    const renderTodo = data.map((todo) => {
        if (+idRef === +todo.id) {
            let todos = todo.todoList.map((value, index) => {
-               return <li className="jobTodo__item" key={index}>{value}</li>
+               return <JobTodoItem name={value} elemKey={index} />
            })
            return (
                 <div id={todo.id}>

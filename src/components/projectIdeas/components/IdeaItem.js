@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectAside from '../../projectAside/ProjectAside';
 import todo from '../ideasTest';
 
-const IdeaItem = (props) => {
+const IdeaItem = ({name, id}) => {
 	const todoHandler = (event) => {
 		console.log(event.currentTarget.id);
 		const id = event.currentTarget.id;
@@ -13,11 +13,11 @@ const IdeaItem = (props) => {
 
 	return (
 		<li 
-			id={props.id} 
+			id={id} 
 			className="projectIdeas__item"
 			onClick={(event) => todoHandler(event)}
 		>
-			{props.name}
+			{name}
 		</li>
 	);
 };
