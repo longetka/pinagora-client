@@ -13,14 +13,12 @@ const SearchBrowser = ({onChange}) => {
 
         let timeout = setTimeout(
             () => {
-                console.log("FETCHING DATA");
                 axios
                     .get(`http://localhost:8080/autocomplete?q=${query}`)
                     .catch(e => console.log(e.message))
                     .then(response => {
-                        console.log(response);
                         setSuggestions(response.data);
-                        onChange(suggestions);
+                        onChange(suggestions, query);
                     });
             }, 300
         );
@@ -38,7 +36,7 @@ const SearchBrowser = ({onChange}) => {
             />
             <img 
                 src={searchIcon}
-                alt="" 
+                alt="search" 
                 className="searchBrowser__image"
             />
         </div>
