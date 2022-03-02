@@ -1,0 +1,14 @@
+.chatRoomsTab {
+    font-size: 24px;
+    font-family: $font-main;
+    color: white;
+    border: none;
+    cursor: pointer;
+    // background-color: $transparent-white;
+    background: none;
+    padding: 20px 20px 20px 70px;
+    text-align: left;
+    &--active {
+        background-color: $transparent-white;
+    }
+}

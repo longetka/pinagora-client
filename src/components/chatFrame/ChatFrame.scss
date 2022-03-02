@@ -1,0 +1,75 @@
+.chatFrame {
+    background-color: rgb(69, 124, 164);
+    border-radius: 10px;
+    padding: 25px;
+    /* UserInfo */
+    &__userInfo {
+        display: grid;
+        grid-template-columns: .4fr 1.5fr 1.2fr;
+        padding-bottom: 25px;
+        border-bottom: 2px solid $half-trans-white;
+    }
+    &__userPic {
+        justify-self: center;
+    }
+    &__username, &__status, &__usernameInput, &__usernameSelect {
+        align-self: center;
+        font-family: $font-main;
+        font-weight: 400;
+    }
+    &__usernameInput {
+        border: none;
+        border-bottom: 1.5px solid $half-trans-white;
+        background: none;
+    }
+    &__usernameSelect {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    &__username, &__usernameInput, &__usernameSelect {
+        font-size: 30px;
+        color: white;
+    }
+    &__status {
+        font-size: 24px;
+        color: rgba(255, 255, 255, .6);
+
+    }
+    /* Main */
+    &__main {
+        height: 35vh;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    /* Footer */
+    &__footer {
+        display: grid;
+        grid-template-columns: 1fr .15fr .15fr;
+        align-items: center;
+    }
+    &__input {
+        width: 95%;
+        border: none;
+        background-color: rgba(255, 255, 255, .3);
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        font-family: $font-main;
+        font-size: 18px;
+        font-weight: 400;
+        &::placeholder {
+            color: rgba(255, 255, 255, .7);
+            font-family: $font-main;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+    &__sendMessage, &__sendPhoto {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+}

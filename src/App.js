@@ -14,6 +14,7 @@ import MapPage from './pages/map/MapPage';
 import Browser from './pages/browser/Browser';
 import Job from './pages/job/Job';
 import Games from './pages/games/Games';
+import Chat from './pages/chat/Chat';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/web" element={<Browser />} />
           <Route path="/job" element={<Job />} />
           <Route path="/games" element={<Games />} />
+          <Route path="/family" element={<Chat />} />
         </Routes>
 
       </Router>
