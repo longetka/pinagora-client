@@ -1,6 +1,7 @@
 import React  from 'react';
+import socket from '../../services/socket';
 
-const ChatRoomsTab = ({name, selected, onChange, socket}) => {
+const ChatRoomsTab = ({name, selected, onChange}) => {
     const handleChange = (event) => {
         onChange(event.target.id);
         socket.emit('joinRoom', event.target.id);

@@ -1,0 +1,13 @@
+.inputEmail {
+    background: #4880A1;
+    border: none;
+    color: white;
+    width: 650px;
+    height: 35px;
+    padding-left: 25px;
+    &, &::placeholder {
+        font-family: $font-main;
+        font-size: 20px;
+        font-weight: 400;
+    }
+}

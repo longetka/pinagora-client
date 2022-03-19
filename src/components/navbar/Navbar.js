@@ -9,10 +9,14 @@ const Navbar = (props) => {
 		<div>
 			<nav className="navbar">
 				<Link to="/">
-					<img src={logotypePic} alt="Pinagora logotype" className="navbar__logotype" />
+					<img 
+                        src={logotypePic} 
+                        alt="Pinagora logotype" 
+                        className="navbar__logotype" 
+                    />
 				</Link>
 				
-				<LoginButton userName={props.userName} />
+				<LoginButton name={props.userName} />
 			</nav>
 		</div>
 	)

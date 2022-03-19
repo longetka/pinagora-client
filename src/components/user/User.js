@@ -1,12 +1,14 @@
 import React from 'react';
 
-const User = (props) => {
+const User = ({image, firstName='', lastName=''}) => {
 
 	return (
 		<div className="user">
-			<div className="user__avatar"></div>
+			<div className="user__avatar">
+                <img src={image} alt='User Avatar' />
+            </div>
 			<p className="user__description">
-				{props.firstName + " " + props.lastName}
+				{firstName + " " + lastName}
 			</p>
 		</div>
 	);

@@ -15,6 +15,8 @@ import Browser from './pages/browser/Browser';
 import Job from './pages/job/Job';
 import Games from './pages/games/Games';
 import Chat from './pages/chat/Chat';
+import Login from './pages/login/Login';
+import Register from './pages/register/Register';
 
 function App() {
   return (
@@ -37,6 +39,8 @@ function App() {
           <Route path="/job" element={<Job />} />
           <Route path="/games" element={<Games />} />
           <Route path="/family" element={<Chat />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />}/>
         </Routes>
 
       </Router>

@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import chatIcon from '../../assets/images/pic/unsplash_DItYlc26zVI.png';
 import sendPhotoIcon from '../../assets/images/icons/send-img.png';
+import socket from '../../services/socket';
 
-const ChatFrame = ({socket, room}) => {
+const ChatFrame = ({room}) => {
     let [message, setMessage] = useState('');
     let [username, setUsername] = useState('');
     let [isUsername, setIsUsername] = useState(false);
@@ -21,30 +22,34 @@ const ChatFrame = ({socket, room}) => {
 
     const confirmUsername = () => {
         setIsUsername(true);
+        if (username) {
+            socket.auth = {username};
+            socket.connect();
+        }
     };
         
-    
     const handleChangeInput = (e) => {
         setMessage(e.target.value);
     };
 
-    const sendMessageHandler = async () => {
+    const sendMessageHandler = () => {
         let messageFull = {
             room: room,
             username: username,
             message: message,
             time: `${hours}:${minutes}`
         }
-        if (username && message !== '') {
-            await socket.emit('sendMessage', messageFull);
-        }
+        socket.emit('sendMessage', messageFull);
     }
 
-    useEffect(() => {
-        socket.on('receiveMessage', (data) => {
-            console.log(data);
-        })
-    }, [socket]);
+    useEffect(
+        () => {
+            socket.on('receiveMessage', content => {
+                console.log(content);
+            })
+        }
+    )
+
     return (
         <div className='chatFrame'>
             <div className='chatFrame__header'>
@@ -52,7 +57,7 @@ const ChatFrame = ({socket, room}) => {
                     <img
                         className='chatFrame__userPic' 
                         src={chatIcon}
-                        alt='userPic'
+                        alt='user'
                     />
                     {
                         !isUsername ? (
@@ -82,7 +87,6 @@ const ChatFrame = ({socket, room}) => {
                 </div>
             </div>
             <div className='chatFrame__main'>
-
             </div>
             <div className='chatFrame__footer'>
                 <label htmlFor="messageInput">
@@ -120,7 +124,7 @@ const ChatFrame = ({socket, room}) => {
                 <button className='chatFrame__sendPhoto'>
                     <img 
                         src={sendPhotoIcon} 
-                        alt="Send Photo" 
+                        alt="Send" 
                     />
                 </button>
             </div>

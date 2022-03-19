@@ -1,13 +1,18 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import userLoginPic from '../../../assets/images/icons/user_login.png';
 
-const LoginButton = (props) => {
+const LoginButton = ({name}) => {
 
 	return (
-		<a href="/" className="loginButton">
-			<img src={userLoginPic} alt="" className="loginButton__avatar" />
-			<p className="loginButton__username">{props.userName}</p>
-		</a>
+		<Link to="/login" className="loginButton">
+			<img 
+                src={userLoginPic} 
+                alt="user login" 
+                className="loginButton__avatar" 
+            />
+			<p className="loginButton__username">{name}</p>
+		</Link>
 	);
 };
 

@@ -1,24 +1,26 @@
 import React, {useState} from 'react';
-import io from 'socket.io-client';
 import ChatFrame from '../../components/chatFrame/ChatFrame';
 import ChatRooms from '../../components/chatRooms/ChatRooms';
 import NavAppField from '../../components/navAppField/NavAppField';
 
-const socket = io.connect('http://localhost:8080');
 const chatRooms = ['Wife', 'Daughter', 'Son'];
 
 const Chat = () => {
-    let [message, setMessage] = useState('');
-    let [room, setRoom] = useState('');
+    let [selectedRoom, setSelectedRoom] = useState('');
+
+    const handleSelectedRoom = (room) => {
+        setSelectedRoom(room);
+    }
 
     return (
-        
         <div className='chat' >
             <div className='chat__wrapper'>
-                <ChatRooms rooms={chatRooms} socket={socket}/>
+                <ChatRooms 
+                    rooms={chatRooms} 
+                    onChange={handleSelectedRoom} 
+                />
                 <ChatFrame 
-                    socket={socket}
-                    room={chatRooms[0]}
+                    room={selectedRoom}
                 />
                 <div></div>
             </div>

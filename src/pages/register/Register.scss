@@ -1,0 +1,27 @@
+.register {
+    width: 70%;
+    margin: 0 auto;
+    &__wrapper {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+    &__title {
+        color: white;
+        font-size: 30px;
+    }
+    &__title, &__message, &__message--visible {
+        font-family: $font-main;
+        font-weight: 400;
+    }
+    &__message {
+        display: none;
+        &--visible {
+            display: block;
+            color: indianred;
+            font-size: 18px;
+        }
+    }
+}

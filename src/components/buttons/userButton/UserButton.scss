@@ -1,0 +1,19 @@
+.userButton {
+    background: #457CA4;
+    padding: 20px 95px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-family: $font-main;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    &:hover {
+        outline: 1px solid white;
+    }
+
+    &:disabled {
+        color: gray;
+        cursor: not-allowed;
+    }
+}

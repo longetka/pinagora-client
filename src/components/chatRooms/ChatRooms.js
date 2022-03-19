@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
 import ChatRoomsTab from '../chatRoomsTab/ChatRoomsTab';
 
-const ChatRooms = ({rooms, socket}) => {
+const ChatRooms = ({rooms, onChange}) => {
     let [roomId, setRoomId] = useState('');
 
     const handleClick = (id) => {
         setRoomId(id);
+        onChange(id);
     }
 
     const renderRoomTab = rooms.map((room, index) => {
@@ -13,9 +14,8 @@ const ChatRooms = ({rooms, socket}) => {
             <ChatRoomsTab 
                 name={room} 
                 key={index}
-                selected={roomId == room}
+                selected={roomId === room}
                 onChange={handleClick}
-                socket={socket}
             />
         )
     })
