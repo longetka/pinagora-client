@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
+import { AuthContext } from '../../context/AuthContext';
 import {Navigate} from 'react-router-dom';
 import User from '../../components/user/User';
 import defaultAvatar from '../../assets/images/pic/defaultAvatar.png';
@@ -8,13 +9,14 @@ import UserLink from '../../components/userLink/UserLink';
 import axios from 'axios';
 
 const Login = () => {
+    let {login} = useContext(AuthContext);
 
     let [responseMessage, setResponseMessage] = useState({
         message: '', visible: false
     });
     let [created, setCreated] = useState(false);
 
-    let login = (event) => {
+    let loginHandler = (event) => {
         event.preventDefault();
         let data = {
             email: event.target[0].value,
@@ -33,6 +35,7 @@ const Login = () => {
                         message: '',
                         visible: false
                     });
+                    login(response.data.token, response.data.userId);
                     setCreated(true);
                 }
                 if (response.status === 202) {
@@ -49,7 +52,7 @@ const Login = () => {
 
     return (
         <div className='login'>
-            <form onSubmit={login} className='login__wrapper'>
+            <form onSubmit={loginHandler} className='login__wrapper'>
             {
                 created
                 ? <Navigate to='/' />

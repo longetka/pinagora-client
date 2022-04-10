@@ -1,0 +1,32 @@
+.signBlock {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-right: 25px;
+
+    &__login, &__register {
+        text-decoration: none;
+        color: white;
+        font-family: $font-main;
+        font-size: 18px;
+        font-weight: 400;
+        border-radius: 8px;
+        padding: 15px;
+    }
+    &__login {
+        &:hover {
+            border: 1px solid white;
+        }
+    }
+    
+    &__register {
+        background-color: #457CA4;
+        transition: all .3s ease-out;
+        &:hover {
+            border: 1px solid white;
+        }
+        &:active {
+            transform: scale(.9);
+        }
+    }
+}

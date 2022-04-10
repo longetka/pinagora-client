@@ -5,10 +5,16 @@
     width: 650px;
     height: 35px;
     padding-left: 25px;
-    &, &::placeholder {
+    &, &::placeholder, &__label {
         font-family: $font-main;
         font-size: 20px;
         font-weight: 400;
+    }
+    &__label {
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 25px;
     }
     /*&--valid {
         outline: solid lightseagreen;

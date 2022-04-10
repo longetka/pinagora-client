@@ -1,0 +1,12 @@
+.settings {
+
+    &__form {
+        width: 55%;
+        margin: 25px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: self-end;
+        margin-top: 25px;
+        gap: 25px;
+    }
+}

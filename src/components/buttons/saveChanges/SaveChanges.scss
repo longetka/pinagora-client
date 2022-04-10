@@ -1,0 +1,17 @@
+.saveChanges {
+    padding: 20px;
+    background-color: #61b561;
+    border-radius: 8px;
+    border: none;
+    transition: all .1s ease;
+
+    color: white;
+    font-family: $font-main;
+    font-size: 18px;
+    &:hover {
+        border: 1px solid white;
+    }
+    &:active {
+        transform: scale(.95);
+    }
+}
